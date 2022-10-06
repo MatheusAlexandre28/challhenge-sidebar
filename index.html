@@ -5,23 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <script src="./script.js"></script>
   <title>sideBar</title>
 </head>
 <body>
-  <aside onclick="">
+  <aside class="sideBar">
     <div class="container-aside">
       <button class="hamburger" id="open-sideBar">
-        <img src="./images/logo.svg" alt="">
+        <img class="logo" src="./images/logo.svg" alt="">
         <img src="./images/menu.svg" alt="">
       </button>
       <div class="options">
         <input type="text" class="search" placeholder="Buscar">
-        <button><img src="./images/grid.svg" alt="buscar">Dashboard</button>
-        <button><img src="./images/pet.svg" alt="buscar">Pets</button>
-        <button><img src="./images/user.svg" alt="buscar">Clientes</button>
-        <button><img src="./images/vet.svg" alt="buscar">Vets</button>
-        <button><img src="./images/settings.svg" alt="buscar">Ajustes</button>
+        <button><img src="./images/grid.svg" alt="buscar"><p class="names-sideBar">Dashboard</p></button>
+        <button><img src="./images/pet.svg" alt="buscar"><p class="names-sideBar">Pets</p></button>
+        <button><img src="./images/user.svg" alt="buscar"><p class="names-sideBar">Clientes</p></button>
+        <button><img src="./images/vet.svg" alt="buscar"><p class="names-sideBar">Vets</p></button>
+        <button><img src="./images/settings.svg" alt="buscar"><p class="names-sideBar">Ajustes</p></button>
       </div>
       <div class="close">
         <div class="perfil">
@@ -32,8 +31,10 @@
           </div>
         </div>
         <button class="logoutButton"><img src="./images/log-out.svg" alt="" height="25x"></button>
+        
       </div>
     </div>
+    <script src="./script.js"></script>
   </aside>
 </body>
 </html>

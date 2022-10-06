@@ -14,10 +14,11 @@
   box-sizing: border-box;
 }
 
-.container-aside {
+.sideBar {
   height: 100vh;
   width: 20.3%;
   background-color: #18c29c;
+  transition: all 0.5s ease;
 }
 
 .hamburger {
@@ -33,6 +34,12 @@
   width: 100%;
   border: none;
 }
+
+.sideBar.active .logo {
+  opacity: 0;
+  width: 0;
+}
+
 
 .options {
   padding: 20px 10px 0px 10px;
@@ -59,6 +66,8 @@
   opacity: 9;
 }
 
+
+
 .search::placeholder {
   font-size: .9rem;
   color: #084236;
@@ -76,18 +85,22 @@
   bottom: 0;
   left: 0;
   padding: 0px 10px 0px 10px;
+  transition: all 0.5s ease;
 }
 
 .perfil {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: all 0.5s ease;
 }
 
 .img-perfil {
+  object-fit: cover;
   border-radius: .4rem;
   height: 43px;
   width: 43px;
+  transition: all 0.5s ease;
 }
 
 .close p {
@@ -141,3 +154,40 @@
   background-color: #18c29c;
   transition: 0.4s;
 }
+
+.sideBar.active {
+  width: 70px;
+}
+
+.sideBar.active .close{
+  background: #18c29c;
+  width: 70px;
+}
+
+.sideBar.active .perfil{
+  opacity: 0;
+}
+
+.sideBar.active .names-sideBar {
+  opacity: 0;
+}
+
+.sideBar.active .search::placeholder {
+  opacity: 0;
+}
+
+.sideBar.active .search {
+  background-position: 50%;
+}
+
+.sideBar.active .logoutButton {
+  position: absolute;
+}
+
+
+
+
+
+
+
+
