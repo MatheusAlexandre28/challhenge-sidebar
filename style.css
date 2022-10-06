@@ -14,11 +14,17 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+}
+
 .sideBar {
   height: 100vh;
-  width: 20.3%;
+  width: 240px;
   background-color: #18c29c;
   transition: all 0.5s ease;
+
+  min-width: none;
 }
 
 .hamburger {
@@ -79,7 +85,7 @@
   justify-content: space-between;
   background-color: #8ed7c6;
   align-items: center;
-  width: 20.3%;
+  width: 240px;
   height: 8vh;
   position: absolute;
   bottom: 0;
@@ -170,7 +176,9 @@
 
 .sideBar.active .names-sideBar {
   opacity: 0;
+  pointer-events: auto;
 }
+
 
 .sideBar.active .search::placeholder {
   opacity: 0;
@@ -183,6 +191,20 @@
 .sideBar.active .logoutButton {
   position: absolute;
 }
+
+.sideBar.active .img {
+  padding-left: 3px;
+}
+
+.title_main {
+  font-weight: 500;
+  color: #084236;
+}
+
+main {
+  margin-left: 20px;
+}
+
 
 
 
